@@ -1,0 +1,17 @@
+.contactInfo {
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.contactInfo h1 {
+  font-weight: 400;
+}
+
+
+@media screen and (min-width: 435px) {
+  .contactInfo {
+    font-size: 1rem;
+  }
+}
+
+

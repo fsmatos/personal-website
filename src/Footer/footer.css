@@ -1,0 +1,37 @@
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-top: 0px;
+  font-weight: 400;
+}
+
+.footerMenu {
+  list-style: none;
+  display: inline-flex;
+  align-self: center;
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.footerItems {
+  padding-left: 30px;
+}
+
+.footerItems a{
+  color: #262626;
+}
+
+.footerName {
+  align-self: center;
+}
+
+@media screen and (min-width: 520px) {
+  .footerMenu {
+    list-style: none;
+    display: inline-flex;
+  }
+  .footerItems {
+    padding-left: 30px;
+  }
+}

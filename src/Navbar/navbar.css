@@ -1,0 +1,73 @@
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: unset;
+}
+
+.nav-list {
+  list-style-type: none;
+  align-self: center;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.link {
+  color: #262626;
+}
+
+.logo {
+  width: 150px;
+  height: 75px;
+  display: flex;
+  background-image: url(../Assets/monogramBlack.svg);
+  background-position: -19% 0%;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.logo svg {
+  align-self: center;
+  z-index: 0;
+}
+
+@media screen and (max-width: 913px) {
+  .navbar {
+    flex-direction:column-reverse;
+    width: 50%;
+    align-self: center;
+    position: relative;
+  }
+
+  .menu {
+    align-self: flex-end;
+    display: flex;
+  }
+
+  .nav-list .list-item {
+    display: block;
+    padding: 20px;
+    padding-bottom: 20px;
+  }
+
+  .list-item:not(:last-child) {
+    border-bottom: 0.5px solid #26262649;
+  }
+
+  .nav-list {
+    width: 100%;
+    text-align: right;
+    display: none;
+    box-shadow: 0 0 30px #2626261f;
+    padding-left: 0;
+  }
+}
