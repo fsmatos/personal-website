@@ -6,13 +6,8 @@ import { AllProjects } from '../../Features/AllProjects/allProjects';
 export const Home = () => {
     return (
         <div className='home-container'>
-            <section className='greetings'>
-                <Greetings />
-            </section>
-            <h3 className = "recentWork">Recent Work</h3>
-            <section className='projects'>
-                <AllProjects />
-            </section>
+            <Greetings className="greetings"/>
+            <AllProjects className="all-projects"/>
         </div>
     )
 }

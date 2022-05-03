@@ -1,0 +1,6 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: rows;
+    grid-gap: 20px;
+}

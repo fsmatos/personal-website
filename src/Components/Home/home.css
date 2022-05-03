@@ -2,17 +2,29 @@
 .home-container {
   grid-column: 2/ 3;
   grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 100px 0;
 }
 
 .recentWork {
     padding-top: 100px;
 }
 
-/*GREETINGS*/
 .greetings {
+  grid-row: 1/2;
+}
+
+.all-projects {
+  grid-row: 2/3;
+}
+
+/*GREETINGS*/
+/*.greetings {
     text-align: left;
     line-height: 30px;
     font-size: 0.9rem;
+    grid-row: 1/2;
 }
 
 .greetings h1 {
@@ -24,10 +36,11 @@
   .greetings {
     font-size: 1rem;
   }
-}
+}*/
 
 /*PROJECTS*/
-.projects {
+/*.projects {
+  grid-row: 2/3;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-auto-rows: 200px;
@@ -45,4 +58,4 @@
         grid-gap: 20px;
         padding-top: 20px;
     }
-}
+}*/

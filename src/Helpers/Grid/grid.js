@@ -20,6 +20,7 @@ export const Grid = () => {
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/contact" element={<Contact />}></Route>
+                    <Route path="/:id"></Route> 
                 </Routes>
                 <footer>
                     <Footer />
