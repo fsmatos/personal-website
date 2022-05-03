@@ -1,17 +1,17 @@
 import React from 'react';
 import './card.css'
+import { Link } from 'react-router-dom';
 
-const Card = () => {
+export const Card = (props) => {
+    const {id, title, brief, tools} = props;
+    console.log(title)
     return(
-        <div className = "project">
-            <div className = "projectInfo">
-                <h3 className = "projectTitle"></h3>
-                <h4 className = "projectDate"></h4>
-                <p className = "projectBrief"></p>
-                <ul className = "projectTools">
-                    <li></li>
-                </ul>
-            </div>
-        </div>
+        <Link to={'/'+id} className='project-card'>
+            <h3>{title}</h3>
+            <p>{brief}</p>
+            <ul>
+                {tools.map((tool, key) => <li key={key}>{tool}</li>)}
+            </ul>
+        </Link>
     )
 }
