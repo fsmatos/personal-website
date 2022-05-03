@@ -1,11 +1,11 @@
 import React from 'react';
 import './home.css'
 import { Greetings } from '../Greetings/greetings';
-import { AllProjects } from '../AllProjects/allProjects';
+import { AllProjects } from '../../Features/AllProjects/allProjects';
 
 export const Home = () => {
     return (
-        <div>
+        <div className='home-container'>
             <section className='greetings'>
                 <Greetings />
             </section>

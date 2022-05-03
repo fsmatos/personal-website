@@ -28,7 +28,7 @@
   width: 150px;
   height: 75px;
   display: flex;
-  background-image: url(../Assets/monogramBlack.svg);
+  background-image: url(../../Assets/monogramBlack.svg);
   background-position: -19% 0%;
   background-repeat: no-repeat;
   transition: all 0.2s ease-in-out;
