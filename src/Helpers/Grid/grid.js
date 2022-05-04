@@ -7,6 +7,7 @@ import {
 import './grid.css'; 
 import { Navbar } from '../../Components/Navbar/navbar';
 import { Home } from '../../Components/Home/home';
+import { Project } from "../../Components/Project/project";
 import { Contact } from '../../Components/Contact/contact';
 import { Footer } from '../../Components/Footer/footer';
 
@@ -17,11 +18,13 @@ export const Grid = () => {
                 <header>
                     <Navbar />
                 </header>
-                <Routes>
-                    <Route path="/" element={<Home />}></Route>
-                    <Route path="/contact" element={<Contact />}></Route>
-                    <Route path="/:id"></Route> 
-                </Routes>
+                <main>
+                    <Routes>
+                        <Route path="/" element={<Home />}></Route>
+                        <Route path="/contact" element={<Contact />}></Route>
+                        <Route path="/:id" element={<Project />}></Route> 
+                    </Routes>
+                </main>
                 <footer>
                     <Footer />
                 </footer>

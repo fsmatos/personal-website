@@ -4,11 +4,6 @@
     font-size: 0.9rem;
 }
 
-.greetings-container h1 {
-    font-weight: 400;
-    line-height: 45px;
-}
-
 @media screen and (min-width: 435px) {
     .greetings-container {
       font-size: 1rem;

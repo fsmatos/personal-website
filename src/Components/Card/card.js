@@ -1,17 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { useDispatch } from 'react-redux';
+import { setWhere } from '../../Features/AllProjects/allProjectsSlice';
 import './card.css'
 import { Link } from 'react-router-dom';
 
 export const Card = (props) => {
-    const {id, title, brief, tools} = props;
-    console.log(title)
+    const dispatch = useDispatch();
+    const {id, title, brief, tools, image, color} = props;
     return(
-        <Link to={'/'+id} className='project-card'>
-            <h3>{title}</h3>
-            <p>{brief}</p>
-            <ul>
-                {tools.map((tool, key) => <li key={key}>{tool}</li>)}
-            </ul>
+        <Link to={'/'+id} onClick={() => dispatch(setWhere(id))} className='project-card'>
+            <div className='card-info'>
+                <h1>{title}</h1>
+                <p>{brief}</p>
+            </div>
+            {<style>{`.project-card {background-image: url(${image}); background-repeat: no-repeat; background-size: cover; background-position:center}`}</style>}
         </Link>
     )
 }

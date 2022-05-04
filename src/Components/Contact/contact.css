@@ -1,15 +1,8 @@
 /*GRID POSITIONING*/
 .contact-container {
-  grid-column: 2/ 3;
-  grid-row: 2 / 3;
   line-height: 30px;
   font-size: 0.9rem;
 }
-
-.contact-container h1 {
-  font-weight: 400;
-}
-
 
 @media screen and (min-width: 435px) {
   .contact-container {

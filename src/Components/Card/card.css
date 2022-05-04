@@ -1,28 +1,26 @@
 .project-card {
-    box-shadow: 0 0 30px #2626261f;
-    border-radius: 5px;
-    padding: 20px;
-    height: 350px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    border-radius: 2px;
+    box-shadow: 0 0 15px #26262627;
 }
 
-.project-card p {
-    margin-top: 0;
-}
-
-.project-card ul {
-    list-style: none;
+.card-info{
+    min-height: 100%;
+    color: #262626;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    background-color: #dde3e8c1;
 }
 
-.project-card li {
-    padding-left: 10px;
-    padding-right: 10px;
+.card-info h1, .card-info p{
+    margin:0;
 }
+
+.card-info:hover {
+    opacity: 100%;
+ }
+
+
