@@ -46,6 +46,19 @@
     flex-direction: column;
 }
 
+.tool-names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    line-height: 35px;
+}
+
+.tool-icons {
+    padding-left: 10px;
+    cursor:default;
+}
+
 .challenge h2, .tools h2, .challenge p, .tools p {
     margin: 5px;
 }

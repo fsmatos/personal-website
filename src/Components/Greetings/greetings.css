@@ -9,18 +9,3 @@
       font-size: 1rem;
     }
   }
-
-.contactOptions {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    padding-top: 7px;
-}
-
-.contactOptionsItems {
-    padding-right: 30px;
-}
-
-.contactOptionsItems a{
-    color: #262626;
-}

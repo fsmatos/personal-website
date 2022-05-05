@@ -1,4 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { faJs } from "@fortawesome/free-brands-svg-icons"
+import { faReact } from "@fortawesome/free-brands-svg-icons"
 
 export const initialState = {
     loading: false,
@@ -12,12 +14,14 @@ export const initialState = {
             image:'/reddit.png',
             second_image:'/reddit_second.png',
             description:<p><b>Reddit Mini</b> is an unofficial version of a Reddit front-end app focused on simplifying and improving the user experience.</p>,
-            challenge: <p>Build a front-end application for Reddit.<br></br> The application should integrate the Reddit API to allow users to view and search posts and comments.</p>,
-            tools:'Javascript | React | Redux',
+            challenge: <p>Build a front-end application for Reddit.<br></br> The application should integrate the <b>Reddit API</b> to allow users to view and search posts and comments.</p>,
+            tools: [faJs, faReact, 'Redux'],
             colors:{
-                first_color:'#D0D5D9',
-                second_color:'#575759',
-                third_color:'#FF6547',
+                background:'#D0D5D9', //Grey
+                text:'#575759', //Dark grey
+                highlight:'#FF6547', //Orange
+                logo_color_normal:'invert(35%) sepia(5%) saturate(176%) hue-rotate(201deg) brightness(89%) contrast(84%)',
+                logo_color_highlight: 'invert(57%) sepia(77%) saturate(3985%) hue-rotate(334deg) brightness(107%) contrast(101%)',
                 linear_gradient:'to bottom, #d0d5d900, #d0d5d945, #D0D5D9',
             },
             live_website:'https://harmonious-gnome-b9fffe.netlify.app/',

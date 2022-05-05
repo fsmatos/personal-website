@@ -19,6 +19,8 @@ a:link {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     color: #262626;
+    line-height: 35px;
+    font-weight: 400;
 }
 
 strong {
@@ -31,19 +33,21 @@ h1, h2, h3 {
     line-height: 45px;
 }
 
-p, a {
+p {
     line-height: 35px;
     font-weight: 400;
 }
 
 button {
-    background-color: transparent;
     border: 1px solid;
     border-radius: 8px;
-    padding: 5px;
+    padding: 10px;
     padding-right: 10px;
     padding-left: 10px;
     width: auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
+
 
 

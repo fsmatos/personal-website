@@ -6,7 +6,6 @@
 
 .navbar {
   display: flex;
-  flex-direction: unset;
 }
 
 .nav-list {
@@ -22,22 +21,14 @@
 
 .link {
   color: #262626;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .logo {
-  width: 150px;
-  height: 75px;
   display: flex;
-  background-image: url(../../Assets/monogramBlack.svg);
-  background-position: -19% 0%;
-  background-repeat: no-repeat;
-  transition: all 0.2s ease-in-out;
   cursor: pointer;
-}
-
-.logo svg {
-  align-self: center;
-  z-index: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 913px) {
@@ -48,19 +39,10 @@
     position: relative;
   }
 
-  .menu {
-    align-self: flex-end;
-    display: flex;
-  }
-
   .nav-list .list-item {
     display: block;
     padding: 20px;
     padding-bottom: 20px;
-  }
-
-  .list-item:not(:last-child) {
-    border-bottom: 0.5px solid #26262649;
   }
 
   .nav-list {

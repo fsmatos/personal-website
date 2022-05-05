@@ -1,14 +1,34 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './project.css';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { projectsSelector, setWhere } from '../../Features/AllProjects/allProjectsSlice';
 
 export const Project = () => {
     const dispatch = useDispatch();
     const { projects } = useSelector(projectsSelector);
+    const [hoverLiveButton, setHoverLiveButton] = useState(false);
+    const [hoverSourceButton, setHoverSourceButton] = useState(false);
     const {id} = useParams();
 
+    //Manage live website button color
+    let liveStyle;
+    if(hoverLiveButton) {
+        liveStyle = {backgroundColor:projects[id].colors.highlight}
+    } else {
+        liveStyle = {backgroundColor:"transparent"}
+    }
+
+    //Manage source code button color
+    let sourceStyle;
+    if(hoverSourceButton) {
+        sourceStyle = {backgroundColor:projects[id].colors.highlight}
+    } else {
+        sourceStyle = {backgroundColor:"transparent"}
+    }
+
+    //Manage main image 
     const imageStyle = {
         backgroundImage:`linear-gradient(${projects[id].colors.linear_gradient}),url(${projects[id].image})`,
         backgroundRepeat: "no-repeat",
@@ -20,9 +40,22 @@ export const Project = () => {
         justifyContent: "center"
     }
 
+    //Dispatch id to where as soon as component mounts
     useEffect(() => {
         dispatch(setWhere(id));
     },[dispatch])
+
+    //Open Live Website page on new tab
+    const openLiveWebsite = () => {
+        const url = projects[id].live_website;
+        window.open(url, '_blank');
+    }
+
+    //Open Source Code page on new tab
+    const openSourceCode = () => {
+        const url = projects[id].source_code;
+        window.open(url, '_blank');
+    }
 
     return (
         <div className='project-container'>
@@ -40,17 +73,19 @@ export const Project = () => {
                 <div className='tools'>
                     <h2>Tools</h2>
                     <p>For the development of the project, it was used:</p>
-                    {projects[id].tools}
+                    <div className='tool-names'>
+                        {projects[id].tools.map(tool => typeof tool==='string'?<a className='tool-icons'>{tool}</a>:<FontAwesomeIcon className="icons tool-icons" icon={tool}/>)}
+                    </div>
                 </div>
             </div>
             <div className='solution'>
                 <h2>Solution</h2>
                 <div className='solution-buttons'>
-                    {projects[id].live_website!==''?<button className='button-live'><a href={projects[id].live_website} target="_blank" rel="noreferrer noopener">Live Website</a></button>:<button><a href={projects[id].solution} target="_blank" rel="noreferrer noopener">{projects[id].title}</a></button>}
-                    {projects[id].source_code!==''?<button className='button-source'><a href={projects[id].source_code} target="_blank" rel="noreferrer noopener">Source Code</a></button>:null}
+                    {projects[id].live_website!==''?<button onClick={() => openLiveWebsite()} onMouseEnter={() => setHoverLiveButton(!hoverLiveButton)}  onMouseLeave={() => setHoverLiveButton(!hoverLiveButton)} style={liveStyle} className='button-live'>Live Website</button>:<button onClick={() => openLiveWebsite()} onMouseEnter={() => setHoverLiveButton(!hoverLiveButton)}  onMouseLeave={() => setHoverLiveButton(!hoverLiveButton)} style={liveStyle} >{projects[id].title}</button>}
+                    {projects[id].source_code!==''?<button onClick={() => openSourceCode()} onMouseEnter={() => setHoverSourceButton(!hoverSourceButton)}  onMouseLeave={() => setHoverSourceButton(!hoverSourceButton)} style={sourceStyle} className='button-source'>Source Code</button>:null}
                 </div>
             </div>
-            {<style>{`body { background-color: ${projects[id].colors.first_color}; color:${projects[id].colors.second_color}} a {color: ${projects[id].colors.second_color}} button {color:  ${projects[id].colors.second_color}}`}</style>}
+            {<style>{`body { background-color: ${projects[id].colors.background}; color:${projects[id].colors.text}}  button {color:  ${projects[id].colors.text}} b {color: ${projects[id].colors.highlight}}`}</style>}
         </div>
         
     )
