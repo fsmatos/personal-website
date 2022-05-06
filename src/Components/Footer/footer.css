@@ -1,37 +1,20 @@
 .foot {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding-bottom: 25px;
   padding-top: 0px;
   font-weight: 400;
-}
-
-.footerMenu {
-  list-style: none;
-  display: inline-flex;
-  align-self: center;
-  padding-left: 0;
-  padding-right: 30px;
-}
-
-.footerItems {
-  padding-left: 30px;
-}
-
-.footerItems a{
-  color: #262626;
+  align-items: center;
 }
 
 .footerName {
   align-self: center;
+  margin: 0;
 }
 
-@media screen and (min-width: 520px) {
-  .footerMenu {
-    list-style: none;
-    display: inline-flex;
-  }
-  .footerItems {
-    padding-left: 30px;
+@media screen and (min-width: 435px) {
+  .foot {
+    flex-direction:initial;
   }
 }

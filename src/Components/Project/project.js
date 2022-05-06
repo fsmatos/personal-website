@@ -43,7 +43,7 @@ export const Project = () => {
     //Dispatch id to where as soon as component mounts
     useEffect(() => {
         dispatch(setWhere(id));
-    },[dispatch])
+    },[dispatch,id])
 
     //Open Live Website page on new tab
     const openLiveWebsite = () => {
@@ -74,7 +74,7 @@ export const Project = () => {
                     <h2>Tools</h2>
                     <p>For the development of the project, it was used:</p>
                     <div className='tool-names'>
-                        {projects[id].tools.map(tool => typeof tool==='string'?<a className='tool-icons'>{tool}</a>:<FontAwesomeIcon className="icons tool-icons" icon={tool}/>)}
+                        {projects[id].tools.map((tool, key) => typeof tool==='string'?<p key={key} className='tool-icons'>{tool}</p>:<FontAwesomeIcon key={key} className="icons tool-icons" icon={tool}/>)}
                     </div>
                 </div>
             </div>

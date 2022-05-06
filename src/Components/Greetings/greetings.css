@@ -4,6 +4,11 @@
     font-size: 0.9rem;
 }
 
+.greetings-container li{
+  margin-right: 50px;
+  padding: 0;
+}
+
 @media screen and (min-width: 435px) {
     .greetings-container {
       font-size: 1rem;

@@ -2,11 +2,11 @@
     list-style: none;
     display: flex;
     padding: 0;
-    padding-top: 7px;
+    margin: 0;
 }
 
 .contactOptionsItems {
-    padding-right: 30px;
+    padding: 20px;
 }
 
 .contactOptionsItems a{
