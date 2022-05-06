@@ -34,6 +34,4 @@ my-portfolio/src
 
 
 
-![Screenshot 2022-04-29 at 18 49 40](https://user-images.githubusercontent.com/64935395/165997239-bc229598-15f4-42ae-8602-c90e7597f3ba.png)
-
 
