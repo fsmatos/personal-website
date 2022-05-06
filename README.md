@@ -26,11 +26,6 @@ my-portfolio/src
   - **React:** Front-end library
   - **Redux:** Global state management
 
-## Features
-1. Greetings section
-2. Showcase
-3. Contact Page
-4. My Curriculum Vitae
 
 
 
