@@ -6,10 +6,6 @@
     grid-gap: 25px;
 }
 
-.card-0{
-    grid-column: span 2;
-}
-
 @media screen and (min-width: 913px) {
     .projects-grid {
       display: grid;

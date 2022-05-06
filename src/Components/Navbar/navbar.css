@@ -1,3 +1,4 @@
+/*Main navigation div*/
 .main-navigation {
   display: flex;
   justify-content: space-between;
@@ -7,28 +8,10 @@
   max-height: 10vh;
 }
 
+/*Navbar*/
 .navbar {
   display: flex;
   z-index: 1;
-}
-
-.nav-list {
-  display: flex;
-  list-style-type: none;
-  align-self: center;
-}
-
-.icon-menu {
-  display: none;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.link {
-  color: #262626;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  padding: 15px;
 }
 
 .logo {
@@ -41,6 +24,25 @@
 .logo img {
   width: 100%;
   height: auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  align-self: center;
+}
+
+.link {
+  color: #262626;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 15px;
+}
+
+.icon-menu {
+  display: none;
+  align-items: center;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 913px) {
