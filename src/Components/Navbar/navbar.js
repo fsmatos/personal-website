@@ -80,7 +80,7 @@ export const Navbar = () => {
                         <Link onClick={() => dispatch(setWhere(''))} to='/contact' onMouseEnter={() => setHoverContact(!hoverContact)}  onMouseLeave={() => setHoverContact(!hoverContact)} style={contactStyle} className='link'>CONTACT</Link>
                     </li>
                     <li className = {openMenu?"list-item open-design":"nav-list"}>
-                        <Link to="/" className='link' onMouseEnter={() => setHoverCV(!hoverCV)}  onMouseLeave={() => setHoverCV(!hoverCV)} style={cvStyle} onClick={() => dispatch(setWhere(''))}>CV</Link>
+                        <a href='/CV.pdf' target="_blank" rel="noopener noreferrer" className='link' onMouseEnter={() => setHoverCV(!hoverCV)}  onMouseLeave={() => setHoverCV(!hoverCV)} style={cvStyle} onClick={() => dispatch(setWhere(''))}>CV</a>
                     </li>
                 </ul>
                 <div className='icon-menu'>
