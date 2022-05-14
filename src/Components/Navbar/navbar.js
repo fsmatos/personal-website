@@ -20,47 +20,47 @@ export const Navbar = () => {
     if(hoverLogo && where !== "") {
         logoStyle = {filter:projects[where].colors.logo_color_highlight}
     } else if(hoverLogo && where === "") {
-        logoStyle = {filter: "invert(48%) sepia(69%) saturate(2420%) hue-rotate(329deg) brightness(95%) contrast(99%)"}
+        logoStyle = {filter: "invert(29%) sepia(0%) saturate(1319%) hue-rotate(142deg) brightness(99%) contrast(93%)"}
     } else if (!hoverLogo && where !== "") {
         logoStyle = {filter:projects[where].colors.logo_color_normal}
     } else {
-        logoStyle = {filter:"invert(8%) sepia(13%) saturate(4%) hue-rotate(325deg) brightness(89%) contrast(82%)"}
+        logoStyle = {filter:"invert(69%) sepia(0%) saturate(0%) hue-rotate(143deg) brightness(81%) contrast(85%)"}
     }
 
     //Manage Showcase link color
     let showcaseStyle;
     if(hoverShowcase && where !== "") {
-        showcaseStyle = {color:projects[where].colors.highlight}
+        showcaseStyle = {color:projects[where].colors.highlight, fontWeight:"bold"}
     } else if(hoverShowcase && where === "") {
-        showcaseStyle = {color: "#F24B4B"}
+        showcaseStyle = {color: "#4D4D4D", fontWeight:"bold"}
     } else if (!hoverShowcase && where !== "") {
         showcaseStyle = {color:projects[where].colors.text}
     } else {
-        showcaseStyle = {color:"#262626"}
+        showcaseStyle = {color:"#8C8C8C"}
     }
 
     //Manage Contact link color
     let contactStyle;
     if(hoverContact && where !== "") {
-        contactStyle = {color:projects[where].colors.highlight}
+        contactStyle = {color:projects[where].colors.highlight, fontWeight:"bold"}
     } else if(hoverContact && where === "") {
-        contactStyle = {color: "#F24B4B"}
+        contactStyle = {color: "#4D4D4D", fontWeight:"bold"}
     } else if (!hoverContact && where !== "") {
         contactStyle = {color:projects[where].colors.text}
     } else {
-        contactStyle = {color:"#262626"}
+        contactStyle = {color:"#8C8C8C"}
     }
 
     //Manage CV link color
     let cvStyle;
     if(hoverCV && where !== "") {
-        cvStyle = {color:projects[where].colors.highlight}
+        cvStyle = {color:projects[where].colors.highlight, fontWeight:"bold"}
     } else if(hoverCV && where === "") {
-        cvStyle = {color: "#F24B4B"}
+        cvStyle = {color: "#4D4D4D", fontWeight:"bold"}
     } else if (!hoverCV && where !== "") {
         cvStyle = {color:projects[where].colors.text}
     } else {
-        cvStyle = {color:"#262626"}
+        cvStyle = {color:"#8C8C8C"}
     }
 
     //Manage open menu when size decreases
@@ -72,12 +72,12 @@ export const Navbar = () => {
                 </Link>
             </div>
             <nav className = "navbar">
-                <ul className = {openMenu?"nav-list open":"nav-list"} style={where!==''?{backgroundColor:projects[where].colors.background}:{backgroundColor:"#dde3e8"}}>
+                <ul className = {openMenu?"nav-list open":"nav-list"} style={where!==''?{backgroundColor:projects[where].colors.background}:{backgroundColor:"#e8eef4"}}>
                    <li className = {openMenu?"list-item open-design":"nav-list"}>
-                        <Link onClick={() => dispatch(setWhere(''))} to='/' className='link' onMouseEnter={() => setHoverShowcase(!hoverShowcase)}  onMouseLeave={() => setHoverShowcase(!hoverShowcase)} style={showcaseStyle} >Showcase</Link>
+                        <Link onClick={() => dispatch(setWhere(''))} to='/' className='link' onMouseEnter={() => setHoverShowcase(!hoverShowcase)}  onMouseLeave={() => setHoverShowcase(!hoverShowcase)} style={showcaseStyle} >SHOWCASE</Link>
                     </li>
                     <li className = {openMenu?"list-item open-design":"nav-list"}>
-                        <Link onClick={() => dispatch(setWhere(''))} to='/contact' onMouseEnter={() => setHoverContact(!hoverContact)}  onMouseLeave={() => setHoverContact(!hoverContact)} style={contactStyle} className='link'>Contact</Link>
+                        <Link onClick={() => dispatch(setWhere(''))} to='/contact' onMouseEnter={() => setHoverContact(!hoverContact)}  onMouseLeave={() => setHoverContact(!hoverContact)} style={contactStyle} className='link'>CONTACT</Link>
                     </li>
                     <li className = {openMenu?"list-item open-design":"nav-list"}>
                         <Link to="/" className='link' onMouseEnter={() => setHoverCV(!hoverCV)}  onMouseLeave={() => setHoverCV(!hoverCV)} style={cvStyle} onClick={() => dispatch(setWhere(''))}>CV</Link>

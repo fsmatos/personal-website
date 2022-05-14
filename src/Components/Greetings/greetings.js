@@ -50,7 +50,7 @@ export const Greetings = () => {
     return(
         <div className='greetings-container'>
             <h1>Hi, my name is <strong>Francisco Matos.</strong></h1>
-            <p>I'm a <strong>front-end developer</strong> based in Portugal. <br /> I started my journey in 2018 and recently finished my degree in Communication and Multimedia Design.</p>
+            <p>I'm a <strong>front-end developer</strong> based in Portugal. I started my journey in 2018 and recently finished my degree in <br></br> Communication and Multimedia Design.</p>
         </div>
     )
 }
