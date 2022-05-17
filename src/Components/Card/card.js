@@ -9,11 +9,13 @@ export const Card = (props) => {
     const {id, title, brief, tools, image, color} = props;
     return(
         <Link to={'/'+id} onClick={() => dispatch(setWhere(id))} className='project-card'>
+            <div className='card-image' style={{backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+            </div>
             <div className='card-info'>
                 <h1>{title}</h1>
                 <p>{brief}</p>
             </div>
-            {<style>{`.project-card {background-image: url(${image}); background-repeat: no-repeat; background-size: cover; background-position:center}`}</style>}
+            {/*{<style>{`.project-card {background-image: url(${image}); background-repeat: no-repeat; background-size: cover; background-position:center}`}</style>}*/}
         </Link>
     )
 }
