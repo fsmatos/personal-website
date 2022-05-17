@@ -81,7 +81,7 @@ export const Project = () => {
             <div className='solution'>
                 <h2>Solution</h2>
                 <div className='solution-buttons'>
-                    {projects[id].live_website!==''?<button onClick={() => openLiveWebsite()} onMouseEnter={() => setHoverLiveButton(!hoverLiveButton)}  onMouseLeave={() => setHoverLiveButton(!hoverLiveButton)} style={liveStyle} className='button-live'>Live Website</button>:<button onClick={() => openLiveWebsite()} onMouseEnter={() => setHoverLiveButton(!hoverLiveButton)}  onMouseLeave={() => setHoverLiveButton(!hoverLiveButton)} style={liveStyle} >{projects[id].title}</button>}
+                    {projects[id].live_website!==''?<button onClick={() => openLiveWebsite()} onMouseEnter={() => setHoverLiveButton(!hoverLiveButton)}  onMouseLeave={() => setHoverLiveButton(!hoverLiveButton)} style={liveStyle} className='button-live'>Live Website</button>:null}
                     {projects[id].source_code!==''?<button onClick={() => openSourceCode()} onMouseEnter={() => setHoverSourceButton(!hoverSourceButton)}  onMouseLeave={() => setHoverSourceButton(!hoverSourceButton)} style={sourceStyle} className='button-source'>Source Code</button>:null}
                 </div>
             </div>
