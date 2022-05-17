@@ -74,10 +74,10 @@ export const Navbar = () => {
             <nav className = "navbar">
                 <ul className = {openMenu?"nav-list open":"nav-list"} style={where!==''?{backgroundColor:projects[where].colors.background}:{backgroundColor:"#e8eef4"}}>
                    <li className = {openMenu?"list-item open-design":"nav-list"}>
-                        <Link onClick={() => dispatch(setWhere(''))} to='/' className='link' onMouseEnter={() => setHoverShowcase(!hoverShowcase)}  onMouseLeave={() => setHoverShowcase(!hoverShowcase)} style={showcaseStyle} >SHOWCASE</Link>
+                        <Link onClick={() => dispatch(setWhere(''))} to='/' className='link' onMouseEnter={() => setHoverShowcase(!hoverShowcase)}  onMouseLeave={() => setHoverShowcase(!hoverShowcase)} style={showcaseStyle} >Projects</Link>
                     </li>
                     <li className = {openMenu?"list-item open-design":"nav-list"}>
-                        <Link onClick={() => dispatch(setWhere(''))} to='/contact' onMouseEnter={() => setHoverContact(!hoverContact)}  onMouseLeave={() => setHoverContact(!hoverContact)} style={contactStyle} className='link'>CONTACT</Link>
+                        <Link onClick={() => dispatch(setWhere(''))} to='/contact' onMouseEnter={() => setHoverContact(!hoverContact)}  onMouseLeave={() => setHoverContact(!hoverContact)} style={contactStyle} className='link'>Contact</Link>
                     </li>
                     <li className = {openMenu?"list-item open-design":"nav-list"}>
                         <a href='/CV.pdf' target="_blank" rel="noopener noreferrer" className='link' onMouseEnter={() => setHoverCV(!hoverCV)}  onMouseLeave={() => setHoverCV(!hoverCV)} style={cvStyle} onClick={() => dispatch(setWhere(''))}>CV</a>
