@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to bottom,  #e8eef400,  #e8eef4c4, #e8eef4);
 }
 
 .project-image {
