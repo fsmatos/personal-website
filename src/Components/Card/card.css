@@ -16,8 +16,8 @@
     grid-column: 1 / 3;
     grid-row: 1 / 3;
     min-height: 100%;
-    color: #262626;
     opacity: 0;
+    color: #4D4D4D;
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;

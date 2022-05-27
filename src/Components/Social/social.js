@@ -1,13 +1,10 @@
-import React, {useState} from 'react';
-import { useSelector } from 'react-redux';
-import { projectsSelector } from '../../Features/AllProjects/allProjectsSlice';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import './social.css';
 
 export const Social = () => {
-    const {projects, where} = useSelector(projectsSelector);
 
     return(
         <ul className = "contactOptions">
