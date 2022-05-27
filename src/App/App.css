@@ -14,12 +14,14 @@ body {
     font-family: 'Proxima Nova', sans-serif;
     font-weight: 200;
     font-size: 16px;
+    line-height: 24px;
+
 }
 
 a:link {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-    color: #262626;
+    color: #4D4D4D;
     line-height: 35px;
     font-weight: 400;
 }
@@ -27,11 +29,13 @@ a:link {
 h1, h2, h3 {
     font-weight: 500;
     line-height: 45px;
+    margin: 10px;
 }
 
 p {
-    line-height: 35px;
     font-weight: 400;
+    margin: 0px;
+    color: #4D4D4D;
 }
 
 button {
@@ -41,6 +45,11 @@ button {
     width: auto;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: #8C8C8C;
 }
 
 

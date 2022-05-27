@@ -1,9 +1,10 @@
 .project-container {
     display: grid;
-    grid-template-rows: 0.5fr 500px 1fr auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr;
     font-size: 1rem;
     justify-content: center;
+    grid-gap: 20px 0;
 }
 
 .project-title {
@@ -19,9 +20,21 @@
     text-align: center;
 }
 
+
+.project-image-container {
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
 .project-challenge-tools {
     grid-row: 3/4;
-    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-gap:20px;
@@ -50,17 +63,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px;
-    line-height: 35px;
+    margin: 10px;
 }
 
 .tool-icons {
     padding-left: 10px;
     cursor:default;
-}
-
-.challenge h2, .tools h2, .challenge p, .tools p {
-    margin: 0px;
 }
 
 .solution {

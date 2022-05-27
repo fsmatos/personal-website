@@ -24,6 +24,11 @@
 .logo img {
   width: 100%;
   height: auto;
+  filter: invert(64%) sepia(0%) saturate(13%) hue-rotate(246deg) brightness(87%) contrast(85%);
+}
+
+.logo img:hover {
+  filter: invert(29%) sepia(0%) saturate(18%) hue-rotate(341deg) brightness(101%) contrast(98%);
 }
 
 .nav-list {
@@ -33,10 +38,15 @@
 }
 
 .link {
-  color: #262626;
+  color: #8C8C8C;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   padding: 15px;
+}
+
+.link:hover {
+  color: #4D4D4D;
+  font-weight: 500;
 }
 
 .icon-menu {

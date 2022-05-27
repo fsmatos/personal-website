@@ -15,7 +15,6 @@ export const Card = (props) => {
                 <h1>{title}</h1>
                 <p>{brief}</p>
             </div>
-            {/*{<style>{`.project-card {background-image: url(${image}); background-repeat: no-repeat; background-size: cover; background-position:center}`}</style>}*/}
         </Link>
     )
 }

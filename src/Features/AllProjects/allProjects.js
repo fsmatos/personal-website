@@ -11,7 +11,7 @@ export const AllProjects = () => {
             <h2>Projects</h2>
             <div className='projects-grid'>
                 {projects.map((project, key) => 
-                    <Card key={key} id={project.id} title={project.title} brief={project.brief} image={project.second_image} color={project.colors.third_color} tools={project.tools}/>
+                    <Card key={key} id={project.id} title={project.title} brief={project.brief} image={project.second_image}  tools={project.tools}/>
                 )}
             </div>
         </div>
