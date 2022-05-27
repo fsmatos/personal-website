@@ -75,7 +75,7 @@
     text-align: right;
     box-shadow: 0 0 30px #2626261f;
     padding: 30px;
-    z-index: 2;
     z-index: 1;
+    background-color: #e8eef4;
   }
 }
