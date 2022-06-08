@@ -1,12 +1,11 @@
 import React from 'react';
-import { Social } from '../Social/social';
 import './contact.css';
 
 export const Contact = () => {
     return (
         <section className = "contact-container">
-            <h1>Have an interesting idea?</h1>
-            <p>Feel free to send an e-mail to <b>francisco.simoes.matos@gmail.com</b></p>
+            <h1>Do you have an interesting idea?</h1>
+            <p>Feel free to send an e-mail to <a href="mailto:francisco.simoes.matos@gmail.com" target="_blank" rel="noopener noreferrer"><b>francisco.simoes.matos@gmail.com</b></a></p>
         </section>
     )
 }
