@@ -48,7 +48,7 @@ const projectsSlice = createSlice({
     }
 })
 
-export const { getWhere } = projectsSlice.actions
+export const { getMenu, getWhere } = projectsSlice.actions
 
 export default projectsSlice.reducer
 
@@ -59,4 +59,5 @@ export function setWhere(where) {
         dispatch(getWhere(where))
     }
 }
+
 

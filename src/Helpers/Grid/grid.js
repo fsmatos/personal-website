@@ -5,8 +5,6 @@ import {
     Route,
 } from "react-router-dom";
 import './grid.css';
-import { useSelector } from 'react-redux';
-import { projectsSelector } from '../../Features/AllProjects/allProjectsSlice'; 
 import { Navbar } from '../../Components/Navbar/navbar';
 import { Home } from '../../Components/Home/home';
 import { Project } from "../../Components/Project/project";
@@ -14,7 +12,6 @@ import { Contact } from '../../Components/Contact/contact';
 import { Footer } from '../../Components/Footer/footer';
 
 export const Grid = () => {
-    const {projects, where} = useSelector(projectsSelector);
     return (
         <div className="container">
             <Router>
