@@ -26,11 +26,11 @@
   height: auto;
   z-index: 1;
   transition: all 0.2s ease-in-out;
-  filter: invert(64%) sepia(0%) saturate(13%) hue-rotate(246deg) brightness(87%) contrast(85%);
+  filter: invert(12%) sepia(6%) saturate(4808%) hue-rotate(187deg) brightness(93%) contrast(88%);
 }
 
 .logo img:hover {
-  filter: invert(29%) sepia(0%) saturate(18%) hue-rotate(341deg) brightness(101%) contrast(98%);
+  filter: invert(25%) sepia(85%) saturate(5669%) hue-rotate(233deg) brightness(91%) contrast(85%);
 }
 
 .nav-list {
@@ -40,14 +40,14 @@
 }
 
 .link {
-  color: #8C8C8C;
+  color: #212940;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   padding: 15px;
 }
 
 .link:hover {
-  color: #4D4D4D;
+  color: #324BD9;
   font-weight: 500;
 }
 

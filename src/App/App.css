@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    background-color: #e8eef4;
-    color: #4D4D4D;
+    background-color: #F2F2F2;
+    color: #212940;
     font-family: 'Lato', sans-serif;    
     font-size: 16px;
     line-height: 24px;
@@ -21,7 +21,7 @@ body {
 a:link {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-    color: #4D4D4D;
+    color: #212940;
     line-height: 35px;
     font-weight: 400;
 }
@@ -39,7 +39,11 @@ b {
 p {
     font-weight: 400;
     margin: 0px;
-    color: #4D4D4D;
+    color: #212940;
+}
+
+b {
+    color: #324BD9;
 }
 
 img {
@@ -47,18 +51,18 @@ img {
 }
 
 button {
-    border: 1px solid #4D4D4D;
+    border: 1px solid #212940;
     border-radius: 8px;
     padding: 10px;
     width: auto;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     background-color: transparent;
-    color: #4D4D4D;
+    color: #212940;
 }
 
 button:hover {
-    background-color: #8c8c8c51;
+    background-color: #5c627347;
 }
 
 
