@@ -7,7 +7,7 @@ import { faReact } from "@fortawesome/free-brands-svg-icons"
 export const initialState = {
     loading: false,
     hasErrors: false,
-    where:'',
+    where:'projects',
     projects: [
         {
             id: 0,

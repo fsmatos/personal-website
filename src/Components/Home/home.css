@@ -1,6 +1,7 @@
 .home-container {
   display: grid;
   grid-template-rows: auto auto;
+  grid-gap: 50px 0;
 }
 
 .recentWork {
