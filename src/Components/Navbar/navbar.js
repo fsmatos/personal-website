@@ -34,15 +34,17 @@ export const Navbar = () => {
                     </li>
                 </ul>
                 <ClickAwayListener onClickAway={hide}>
-                    <Box className='burger-menu icon-menu'>
+                    <Box className='icon-menu'>
                         {menu?<FontAwesomeIcon onClick={toggle} icon={faXmark} className="cross-icon"/>:<FontAwesomeIcon onClick={toggle} icon={faBars}/>}
-                        {menu? (
-                            <Box className="menu-box">
-                                <Link onClick={() => {dispatch(setWhere('projects')); hide()}} to='/' className='link'>Projects</Link>
-                                <Link onClick={() => {dispatch(setWhere('about')); hide()}} to='/about' className='link'>About</Link>
-                                <Link onClick={() => {dispatch(setWhere('contact')); hide()}} to='/contact' className='link'>Contact</Link>
-                            </Box> 
-                        ) : null}
+                        <div>
+                            {menu? (
+                                <Box className="menu-box">
+                                    <Link onClick={() => {dispatch(setWhere('projects')); hide()}} to='/' className='link'>Projects</Link>
+                                    <Link onClick={() => {dispatch(setWhere('about')); hide()}} to='/about' className='link'>About</Link>
+                                    <Link onClick={() => {dispatch(setWhere('contact')); hide()}} to='/contact' className='link'>Contact</Link>
+                                </Box> 
+                            ) : null}
+                        </div>
                     </Box>
                 </ClickAwayListener>
             </nav>

@@ -62,15 +62,10 @@
   color:#324BD9;
 }
 
-.burger-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .menu-box {
-  position: absolute;
-  margin-top: 30px;
+  position: relative;
+  top: 100px;
+  right: 0px;
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
@@ -87,6 +82,8 @@
 @media screen and (max-width: 913px) {
   .icon-menu{
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-list{
