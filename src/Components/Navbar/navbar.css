@@ -58,19 +58,15 @@
   padding: 15px;
 }
 
-.cross-icon {
-  color:#324BD9;
-}
-
-.menu-box {
-  position: relative;
-  top: 100px;
+.menu-responsive {
+  position: absolute;
+  top: 28px;
   right: 0px;
+  left: -75px;
   display: flex;
   flex-direction: column;
-  background-color: #F2F2F2;
-  box-shadow: 0 0 30px #2129403a;
-  padding: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 15px #21294053;
 }
 
 .icon-menu {
@@ -81,9 +77,8 @@
 
 @media screen and (max-width: 913px) {
   .icon-menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    position: relative;
   }
 
   .nav-list{
