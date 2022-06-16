@@ -1,143 +1,63 @@
 .about-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-gap: 40px 40px
+    grid-template-rows: 45vh auto auto;
+    align-items: center;
+    grid-gap: 50px 0;
 }
 
-.about-photo {
-    grid-column: 1/2;
-    display: flex;
-    align-items: center;
+/*INTRO*/
+
+.about-intro {
+    grid-row: 1 / 2; 
 }
 
 .about-photo img {
+    grid-row: 2 / 3;
     width: 100%;
     height: auto;
-    border-radius: 2px;
-    box-shadow: 0 0 15px #21294053;
 }
 
-.about-text {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-intro {
-    font-size: 25px;
-    line-height: 35px;
+.about-description h2 {
+    margin: 0;
+    line-height: 40px;
     padding-bottom: 10px;
 }
 
-.about-description {
-    padding-bottom: 20px;
+
+/*DETAIL*/
+
+.about-detail {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 80px 0;
 }
 
-.cv {
-    width: 50%;
-}
-
-/* CERTIFICATES */
-.certificates-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.right-certificates {
-    padding-left: 10px;
-}
-
-.certificate-section h2 {
-    margin: 0;
-}
-
-.certificate-section dl {
-    margin: 0;
-}
-
-.certificate-section dt {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.certificate-section dd {
+.certificate-section h2, .skills h2 {
     margin: 0;
 }
 
 .certificate {
-    padding-bottom: 10px;
+    display: flex;
+}
+
+.certificate-data {
+    font-weight: 300;
+}
+
+.skill-description {
     padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    padding-bottom: 10px;
 }
 
-.certificate:hover {
-    color: #324BD9;
-}
-
-/*SKILLS*/
 .skill-tools {
     display: flex;
     justify-content: space-between;
 }
 
-.skills h2 {
-    margin: 0;
-    padding: 0;
-}
-
-.skill-tools ul {
-    list-style: none;
-    margin: 0px;
+.skills li {
     padding-top: 8px;
+    padding-right: 8px;
 }
-
-.skill-tools li {
-    padding-bottom: 5px;
-}
-
-.tools-left {
-    padding-left: 0;
-}
-
-.tools-right {
-    padding-left: 25px;
-}
-
-/*RESPONSIVE*/
-@media screen and (min-width: 913px) {
-    .about-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .about-photo {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        display: flex;
-        align-items: center;
-    }
-    .about-text {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .cv {
-        align-items: center;
-    }
-    .certificates-list {
-        display: flex;
-        justify-content: inherit;
-    }
-    .skill-tools {
-        display: flex;
-        justify-content: inherit;
-    }
-  }
-
 
 

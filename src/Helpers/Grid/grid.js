@@ -16,6 +16,8 @@ export const Grid = () => {
     return (
         <div className="container">
             <Router>
+                <div className="intro"></div>
+                <div className="detail"></div>
                 <header>
                     <Navbar />
                 </header>

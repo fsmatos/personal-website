@@ -26,11 +26,12 @@
   height: auto;
   z-index: 1;
   transition: all 0.2s ease-in-out;
-  filter: invert(12%) sepia(6%) saturate(4808%) hue-rotate(187deg) brightness(93%) contrast(88%);
+  filter: invert(30%) sepia(16%) saturate(300%) hue-rotate(169deg) brightness(94%) contrast(91%);
+  border-style: none;
 }
 
 .logo img:hover {
-  filter: invert(25%) sepia(85%) saturate(5669%) hue-rotate(233deg) brightness(91%) contrast(85%);
+  filter: invert(23%) sepia(13%) saturate(426%) hue-rotate(169deg) brightness(90%) contrast(96%);
 }
 
 .nav-list {
@@ -40,19 +41,19 @@
 }
 
 .link {
-  color: #212940;
+  color: #495057;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   padding: 15px;
 }
 
 .link:hover {
-  color: #324BD9;
+  color: #343A40;
   font-weight: 500;
 }
 
 .active {
-  color: #324BD9;
+  color: #343A40;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   padding: 15px;
@@ -62,11 +63,11 @@
   position: absolute;
   top: 28px;
   right: 0px;
-  left: -75px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  box-shadow: 0 0 15px #21294053;
+  box-shadow: 0 0 15px #4950576a;
 }
 
 .icon-menu {
