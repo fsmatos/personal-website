@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import './project.css';
+import {Scroll} from '../../Helpers/Scroll/scroll'
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { projectsSelector, setWhere } from '../../Features/AllProjects/allProjectsSlice';
 
 export const Project = () => {
@@ -59,6 +59,7 @@ export const Project = () => {
                     </div>
                 </div>  
             </div>
+            <Scroll />
         </div>
         
     )
