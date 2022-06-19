@@ -1,10 +1,8 @@
 import React from 'react';
 import './about.css';
+import { Greetings } from '../Greetings/greetings';
 
 export const About = () => {
-    const openCV = () => {
-        window.open('/CV.pdf', '_blank');
-    }
     const openHTML = () => {
         window.open('/html.pdf', '_blank');
     }
@@ -26,40 +24,37 @@ export const About = () => {
     return (
         <section className = "about-container">
             <div className='about-intro'>
-                <div className='about-description'>
-                    <h2>Hi, my name is <b>Francisco Matos</b>.<br></br>I'm a <b>front-end developer</b> based in Portugal.</h2>
-                    <p>I started my journey in 2018 and recently finished my degree in Communication and Multimedia Design.</p>
-                </div>
+                <Greetings />
             </div>
             <div className='about-photo'>
-                    <img alt="that's me" src='/me.jpg' />
-                    <legend>yes, that's me &#128513;</legend>
-                </div>
+                <img alt="that's me" src='/me.jpg' />
+                <legend>yes, that's me &#128513;</legend>
+            </div>
             <div className='about-detail'>
                 <div className='certificate-section'>
                     <h2>Certificates</h2>
                     <table>
-                        <tr>
+                        <tr onClick={openHTML}>
                             <td className='certificate-title'>Learn HTML</td>
                             <td className='certificate-data'>Codecademy | Oct. 2021</td>
                         </tr>
-                        <tr>
+                        <tr onClick={openCSS}>
                             <td className='certificate-title'>Learn CSS</td>
                             <td className='certificate-data'>Codecademy | Oct. 2021</td>
                         </tr>
-                        <tr>
+                        <tr onClick={openJS}>
                             <td className='certificate-title'>Learn JavaScript</td>
                             <td className='certificate-data'>Codecademy | May 2022</td>
                         </tr>
-                        <tr>
+                        <tr onClick={openReact}>
                             <td className='certificate-title'>Learn React</td>
                             <td className='certificate-data'>Codecademy | March 2022</td>
                         </tr>
-                        <tr>
+                        <tr onClick={openRedux}>
                             <td className='certificate-title'>Learn Redux</td>
                             <td className='certificate-data'>Codecademy | May 2022</td>
                         </tr>
-                        <tr>
+                        <tr onClick={openCareer}>
                             <td className='certificate-title'>Front-End Engineer Career Path</td>
                             <td className='certificate-data'>Codecademy | June 2022</td>
                         </tr>

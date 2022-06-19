@@ -2,13 +2,16 @@
     display: grid;
     grid-template-rows: 45vh auto auto;
     align-items: center;
-    grid-gap: 50px 0;
 }
 
 /*INTRO*/
 
 .about-intro {
     grid-row: 1 / 2; 
+}
+
+.about-photo {
+    padding-bottom: 50px;
 }
 
 .about-photo img {
@@ -20,9 +23,7 @@
 .about-description h2 {
     margin: 0;
     line-height: 40px;
-    padding-bottom: 10px;
 }
-
 
 /*DETAIL*/
 
@@ -30,11 +31,15 @@
     grid-row: 3 / 4;
     display: grid;
     grid-template-rows: auto auto;
-    grid-gap: 80px 0;
+    grid-gap: 50px 0;
 }
 
 .certificate-section h2, .skills h2 {
     margin: 0;
+}
+
+.certificate-section tr {
+    cursor: pointer;
 }
 
 .certificate {
@@ -52,7 +57,7 @@
 
 .skill-tools {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .skills li {
@@ -60,4 +65,12 @@
     padding-right: 8px;
 }
 
+@media screen and (min-width: 365px) {
+    .skill-tools {
+        justify-content: flex-start;
+    }
+    .skill-tools ul {
+        margin-right: 25px;
+    }
+  }
 

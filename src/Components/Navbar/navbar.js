@@ -8,8 +8,6 @@ import './navbar.css';
 import { Box, ClickAwayListener } from '@mui/material';
 
 export const Navbar = () => {
-    const {params} = useParams();
-    console.log(params);
     const dispatch = useDispatch();
     const [menu, setMenu] = useState(false);
     const toggle = () => setMenu(!menu);

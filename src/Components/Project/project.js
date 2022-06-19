@@ -29,33 +29,35 @@ export const Project = () => {
 
     return (
         <div className='project-container'>
-            <div className='project-title'>
+            <div className='project-intro'>
                 <h1>{projects[id].title}</h1>
                 {projects[id].description}
             </div>
-            <div className="project-image-container">
+            {/*<div className="project-image-container">
                 <img src={projects[id].image} className="project-image"></img>
+    </div>*/}
+            <div className='project-photo'>
+                <img alt={projects[id].title} src={projects[id].image} />
             </div>
-            <div className='project-challenge-tools'>
+            <div className='project-detail'>
                 <div className='challenge'>
                     <h2>Challenge</h2>
                     {projects[id].challenge}
                 </div>
-                <div className='divider-vertical'></div>
                 <div className='tools'>
                     <h2>Tools</h2>
                     <p>For the development of the project, it was used:</p>
                     <div className='tool-names'>
-                        {projects[id].tools.map((tool, key) => typeof tool==='string'?<p key={key} className='tool-icons'>{tool}</p>:<FontAwesomeIcon key={key} className="icons tool-icons" icon={tool}/>)}
+                        {projects[id].tools.map((tool, key) => <p className='tool-icons'>{tool}</p>)}
                     </div>
                 </div>
-            </div>
-            <div className='solution'>
-                <h2>Solution</h2>
-                <div className='solution-buttons'>
-                    {projects[id].live_website!==''?<button onClick={() => openLiveWebsite()} className='button-live'>Live Website</button>:null}
-                    {projects[id].source_code!==''?<button onClick={() => openSourceCode()}  className='button-source'>Source Code</button>:null}
-                </div>
+                <div className='solution'>
+                    <h2>Solution</h2>
+                    <div className='solution-buttons'>
+                        {projects[id].live_website!==''?<button onClick={() => openLiveWebsite()} className='button-live'>Live Website</button>:null}
+                        {projects[id].source_code!==''?<button onClick={() => openSourceCode()}  className='button-source'>Source Code</button>:null}
+                    </div>
+                </div>  
             </div>
         </div>
         

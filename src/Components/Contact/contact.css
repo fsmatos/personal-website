@@ -1,19 +1,16 @@
 .contact-container {
-  line-height: 30px;
-  font-size: 0.9rem;
-  text-align: center;
+  display: grid;
+  grid-template-rows: 50vh auto;
+  align-items: center;
 }
 
-.contact-container li{
-  margin-right: 50px;
-  padding: 0;
-  padding-top: 2px;
+.contact-intro {
+  grid-row: 1 / 2;
 }
 
-@media screen and (min-width: 435px) {
-  .contact-container {
-    font-size: 1rem;
-  }
+.contact-mail {
+  cursor: pointer;
 }
+
 
 

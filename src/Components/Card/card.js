@@ -6,17 +6,19 @@ import { Link } from 'react-router-dom';
 
 export const Card = (props) => {
     const dispatch = useDispatch();
-    const {id, title, description, image} = props;
+    const {id, title, brief, description, image} = props;
     return(
-        <Link to={'/'+id} onClick={() => dispatch(setWhere(id))} className='project-card'>
-            <div className='card-image'>
+        <div className='project-card'>
+            <Link to={'/'+id} onClick={() => dispatch(setWhere(id))} className='card-image'>
                 <img src={image} />
-            </div>
+            </Link>
             <div className='card-info'>
-                <h1>{title}</h1>
+                <h1>{brief}</h1>
                 <p>{description}</p>
-                <button className='card-button'>SEE PROJECT</button>
+                <Link to={'/'+id} onClick={() => dispatch(setWhere(id))}>
+                    <button className='card-button'>SEE PROJECT</button>
+                </Link>                
             </div>
-        </Link>
+        </div>
     )
 }

@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-top: 0px;
-  font-weight: 400;
+  padding-top: 20px;
+  margin-top: 50px;
   align-items: center;
+  border-top: 1px solid #4950576a;
 }
 
 .footerName {
@@ -17,5 +18,6 @@
 @media screen and (min-width: 435px) {
   .foot {
     flex-direction:initial;
+    padding-top: 0;
   }
 }

@@ -1,8 +1,7 @@
 .home-container {
   display: grid;
-  grid-template-rows: 65vh auto;
+  grid-template-rows: 50vh auto;
   align-items: center;
-  grid-gap: 50px 0;
 }
 
 .recentWork {
